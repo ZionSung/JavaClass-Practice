@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 class three14 {
 
     public static void main( String[] args ){
-        var sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String s1 = sc.nextLine();
         String s2 = sc.nextLine();
         String s3 = sc.nextLine();
