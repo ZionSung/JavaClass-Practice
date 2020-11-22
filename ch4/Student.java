@@ -1,53 +1,5 @@
-/*
-import java.util.*;
-
-public class Student {
-    int age = 8;
-    int grade = 0;
-    String name = null;
-    String id = null;
-
-    public int getAge(){
-        return age;
-    }
-
-    public String getId(){
-        return id;
-    }
-
-    public String getName(){
-        return name;
-    }
-}
-*/
-
-// class def 2
-/*
-public class Student{
-    int age = 0;
-    int grade = 0;
-    String name = "";
-    String id = "";
-
-    public boolean setAge( int age ){
-        boolean state = true;
-        return state;
-    }
-
-    public boolean setId( String id ){
-        boolean setId_state = true;
-        return setId_state;
-    } 
-
-    public boolean setStudent( int age, String name, String id){
-        boolean setStudent_state = true;
-        return setStudent_state;
-    }
-}
-
-
 // Get Set Practice
-
+/*
 -------------------
 Get Set的練習(1)
 -------------------
@@ -78,38 +30,40 @@ Student擁有公開的method:
 P.S.因為評分需求，請在輸出答案時加上"student1 use getGrade and setGrade, student2 use getName and setName"及空行
 
 */
+import java.util.*;
 
 public class Student{
-    private int grade;
+
     private String name;
+    private int grade;
 
     public Student(){
-        this.grade = 1;
-        this.name = "NoName";
+        setGrade(1);
+        setName("NoName");
     }
 
-    public Student( int grade , String name ){
-        this.grade = grade;
-        this.name = name;
+    public Student( int grade2 , String name2 ){
+        grade = grade2;
+        name = name2;
     }
 
     public int getGrade(){
-        return this.grade;
+        return grade;
     }
 
-    public boolean setGrade( int grade ){
-        this.grade = grade;
-        boolean setGrade_ok = true;
-        return setGrade_ok;
+    public boolean setGrade( int grade3 ){
+        grade = grade3;
+        return true;
     }
 
     public String getName(){
-        return this.name;
+        return name;
     }
 
-    public boolean setName( String name ){
-        this.name = name;
-        boolean setName_ok = true;
-        return setName_ok;
+    public boolean setName( String name3 ){
+        name = name3;
+        return true;
     }
+
+    //System.out.println("student1 use getGrade and setGrade, student2 use getName and setName");
 }

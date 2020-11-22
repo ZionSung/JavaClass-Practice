@@ -1,37 +1,53 @@
-public class Car {
-    int speed = 0;
-    int mileage = 0;
-    String color = "";
-    String brand = "";
+public class Car{
+    private int speed;
+    private int mileage;
+    private String color;
+    private String brand;
+
+    public Car(){
+        speed = 0;
+        mileage = 0;
+        color = "NoColor";
+        brand = "NoBrand";
+    }
+
+    public Car( int a, int b, String c, String d ){
+
+    }
+
+    public int getSpeed(){
+        return speed;
+    }
+
+    public int getMileage(){
+        return mileage;
+    }
+
+    public String getColor(){
+        return color;
+    }
+
+    public String getBrand(){
+        return brand;
+    }
 
     public boolean setSpeed( int speed ){
-        boolean speed_state = true;
-        return speed_state;
+        this.speed = speed;
+        return true;
     }
 
     public boolean setMileage( int mileage ){
-        boolean mileage_state = true;
-        return mileage_state;
+        this.mileage = mileage;
+        return true;
     }
 
     public boolean setColor( String color ){
-        boolean color_state = true;
-        return color_state;
+        this.color = color;
+        return true;
     }
 
     public boolean setBrand( String brand ){
-        boolean brand_state = true;
-        return brand_state;
-    }
-
-    public boolean setCar( String color, String brand ){
-        boolean car_state = true;
-        return car_state;
-    }
-
-    public boolean setCar( int speed, int mileage, String color, String brand ){
-        boolean car_state = true;
-        return car_state;
+        this.brand = brand;
+        return true;
     }
 }
-
