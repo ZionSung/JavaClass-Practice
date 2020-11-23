@@ -13,7 +13,6 @@ public class DateDemo{
 		d2.readInput();
 
 		d3.setDate(6, 17, 2013);
-
 		//---------------------------
 		//---End to Modify-----
 		//---------------------------
