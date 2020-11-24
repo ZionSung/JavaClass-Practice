@@ -12,7 +12,10 @@ public class Car{
     }
 
     public Car( int a, int b, String c, String d ){
-
+        speed = a;
+        mileage = b;
+        color = c;
+        brand = d;
     }
 
     public int getSpeed(){
@@ -47,6 +50,34 @@ public class Car{
     }
 
     public boolean setBrand( String brand ){
+        this.brand = brand;
+        return true;
+    }
+
+    public boolean setCar( String color, String brand ){
+        this.color = color;
+        this.brand = brand;
+        return true;
+    }
+
+    public boolean setCar( int speed, int mileage, String color, String brand ){
+        this.speed = speed;
+        this.mileage = mileage;
+        this.color = color;
+        this.brand = brand;
+        return true;
+    }
+
+    public boolean setColor( String color, String brand ){
+        this.color = color;
+        this.brand = brand;
+        return true;
+    }
+
+    public boolean setColor( int speed, int mileage, String color, String brand ){
+        this.speed = speed;
+        this.mileage = mileage;
+        this.color = color;
         this.brand = brand;
         return true;
     }
