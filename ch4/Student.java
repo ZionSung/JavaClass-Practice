@@ -1,24 +1,36 @@
 public class Student{
 
-    private int age;
-    private int grade;
-    private String name;
+    public int age;
+    public int grade;
+    public String name;
+    public String id;
 
     public Student(){
         age = 20;
         grade = 1;
         name = "NoName";
+        id = "ACS001";
     }
 
-    public Student( int age, int grade, String name ){
+    public Student( int age ){
+        this.age = age;
+        grade = 1;
+        name = "NoName";
+        id = "ACS001";
+    }
+
+    public Student(  String name ){
+        this.name = name;
+        age = 20;
+        grade = 1;
+        id = "ACS001";
+    }
+
+    public Student( int age, int grade, String name, String id ){
         this.age = age;
         this.grade = grade;
         this.name = name;
-    }
-
-    public Student( int grade2 , String name2 ){
-        grade = grade2;
-        name = name2;
+        this.id = id;
     }
 
     public int getAge(){

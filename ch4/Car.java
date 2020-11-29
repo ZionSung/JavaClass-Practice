@@ -1,8 +1,8 @@
 public class Car{
-    private int speed;
-    private int mileage;
-    private String color;
-    private String brand;
+    public int speed;
+    public int mileage;
+    public String color;
+    public String brand;
 
     public Car(){
         speed = 0;
@@ -11,13 +11,35 @@ public class Car{
         brand = "NoBrand";
     }
 
+    public Car( int speed ){
+        this.speed = speed;
+        mileage = 0;
+        color = "NoColor";
+        brand = "NoBrand";
+    }
+
+    public Car( String brand ){
+        this.brand = brand;
+        speed = 0;
+        mileage = 0;
+        color = "NoColor";
+    }
+
+    public Car( String color, String brand ){
+        this.color = color;
+        this.brand = brand;
+        speed = 0;
+        mileage = 0;
+    }
+
+
     public Car( int a, int b, String c, String d ){
         speed = a;
         mileage = b;
         color = c;
         brand = d;
     }
-
+/*
     public int getSpeed(){
         return speed;
     }
@@ -81,4 +103,5 @@ public class Car{
         this.brand = brand;
         return true;
     }
+    */
 }
