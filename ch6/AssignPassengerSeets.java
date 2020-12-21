@@ -1,3 +1,64 @@
+/*
+Write a program to assign passengers seats in an airplane. Assume a small airplane
+with seat numberings as follows:
+1 A B C D
+2 A B C D
+3 A B C D
+4 A B C D
+5 A B C D
+6 A B C D
+7 A B C D
+The program should display the seat pattern, with an 'X' marking the seats already
+assigned. For example, after seats 1A, 2B, and 4C are taken, the display should look
+like the following:
+1 X B C D
+2 A X C D
+3 A B C D
+4 A B X D
+5 A B C D
+6 A B C D
+7 A B C D
+
+輸入：在鍵盤輸入要登記的座位，可輸入多個，以空白分開，輸入一列。英文大小寫皆可。
+輸出：如上面所列。(每一列用一個空白分隔，每一列結束，以換行)(以及文大寫輸出)
+註：
+1‧輸入座位有重複時，則忽略重複的, 程式仍需正常運作。
+2.若輸入座位格式有錯誤時，直接輸出"ERROR"
+
+範例1：
+-----------------------------
+1A 2B 4C
+1 X B C D
+2 A X C D
+3 A B C D
+4 A B X D
+5 A B C D
+6 A B C D
+7 A B C D
+------------------------------
+------------------------------
+
+
+範例2：
+-----------------------------
+2A 2B 4C 7D 7d
+1 A B C D
+2 X X C D
+3 A B C D
+4 A B X D
+5 A B C D
+6 A B C D
+7 A B C X
+------------------------------
+------------------------------
+
+
+範例3：
+-----------------------------
+2A 2B C4 7D 7d
+ERROR
+*/
+
 import java.util.*;
 
 class AssignPassengerSeets{
